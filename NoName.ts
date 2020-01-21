@@ -1,4 +1,4 @@
-import {loadCommands, handelCommand} from "../DjsCommandHandler/src/Api_Config/cmdHandler";
+/*import {loadCommands, handelCommand} from "../DjsCommandHandler/src/Api_Config/cmdHandler";
 import {Client} from "discord.js"
 import * as Discord from "discord.js"
 import * as dotenv from "dotenv"
@@ -20,4 +20,10 @@ clinet.on("message", (msg) => {
     handelCommand(msg)
 })
 
-clinet.login(process.env.TOKEN)
+clinet.login(process.env.TOKEN)*/
+
+import NoNameClient from "./client/NoNameClient";
+import { token } from "./Config";
+
+const client = new NoNameClient({ token });
+client.start();
