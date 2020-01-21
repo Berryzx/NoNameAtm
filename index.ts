@@ -1,4 +1,4 @@
-import {loadCommands, handelCommand} from "../Stwb_Bot/src/Api_Config/cmdHandler";
+import {loadCommands, handelCommand} from "../DjsCommandHandler/src/Api_Config/cmdHandler";
 import {Client} from "discord.js"
 import * as Discord from "discord.js"
 import * as dotenv from "dotenv"
